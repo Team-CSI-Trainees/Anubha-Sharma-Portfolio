@@ -1,0 +1,82 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+ .container{
+    width:100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+ }
+/* 1.Nav Bar*/
+nav{
+    flex: 1;
+    text-align: right ;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+    margin-top: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:black;
+    font-size:14px;
+}
+nav ul li a:hover{
+    color:crimson;
+}
+/*2.Title Page*/
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0 ;
+}
+.col-1{
+    flex-basis:40%;
+    position: relative;
+    margin-left: 50px;
+}
+.col-1 h1{
+    font-size:54px;
+}
+.col-1 h3{
+    font-size: 30px;
+    color:#ff3527;
+    font-weight: 100;
+    margin:20px 0 10px;
+}
+button{
+    width: 140px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: #fff;
+    background: linear-gradient(to right,#fb5283,#ff3527);
+    border-radius: 6px;
+    cursor: pointer;
+}
+.col-1::after{
+    content: '';
+    width:10px;
+    height: 100%;
+    background: linear-gradient(#fb5283,#ff3527);
+    position: absolute;
+    left:-40px;
+    top:8px;
+}
+.col-2{
+    position: relative ;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+}
+.col-2 .girl{
+    width: 50%;
+    padding-left: 200px;
+    padding-top: 80px;
+}
