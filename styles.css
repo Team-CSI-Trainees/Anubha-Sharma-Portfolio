@@ -2,6 +2,10 @@
     padding: 0px;
     margin: 0px;
 }
+#header{
+    background-image: url("Images/background.png");
+    background-repeat: no-repeat;
+}
  .container{
     width:100%;
     min-height: 100vh;
@@ -10,25 +14,62 @@
     box-sizing: border-box;
     overflow: hidden;
  }
+
 /* 1.Nav Bar*/
+.logo{
+    color:#4C0033;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 40px;
+    padding : 0 100px;
+    font-weight: bold;
+    font-family: 'Sacramento', cursive;
+}
 nav{
-    flex: 1;
-    text-align: right ;
+    display: flex;
+    background-color: #FFF5E4;
+    height: 40%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px 0px 10px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+   /* float: right;
+    margin-right: 20px */;
 }
 nav ul li{
     list-style: none;
-    display: inline-block;
-    margin-right: 30px;
-    margin-top: 20px;
+    margin-right: 20px;
+    margin-top: 15px;
+    margin-bottom: 20px ;
+   
 }
 nav ul li a{
+    font-family: 'EB Garamond', serif;
     text-decoration: none;
-    color:black;
-    font-size:14px;
+    color:#4C0033;
+    font: 18px;
+    border-radius: 5px ;
+    font-weight: 600px;
+    padding: 8px 10px;
+    transition: 0.5s;
 }
 nav ul li a:hover{
-    color:crimson;
+    color:black;
 }
+.menu-btn i{
+    color:#4C0033;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+#click{
+    display: none;
+}
+
 /*2.Title Page*/
 .row{
     display: flex;
@@ -37,19 +78,70 @@ nav ul li a:hover{
     margin: 75px 0 ;
 }
 .col-1{
-    flex-basis:40%;
+    flex-basis:50%;
     position: relative;
-    margin-left: 55px;
+    margin-left: 70px;
+    margin-top: 20px;
 }
 .col-1 h1{
+    font-family: 'EB Garamond', serif;
     font-size:54px;
-    color: black;
+    color:#4C0033 ;
 }
 .col-1 h3{
+    font-family: 'EB Garamond', serif;
     font-size: 30px;
-    color:black;
-    font-weight: 100;
+    color:#4C0033;
+    font-weight: 400;
     margin:20px 0 10px;
+}
+.wrapper{
+   display:flex ; 
+}
+.wrapper .static-txt{
+    font-family: 'EB Garamond', serif;
+    color:#4C0033;
+    font-size: 30px ;
+    font-weight: 600;
+    margin-right: 20px;
+}
+.warpper .dynamic-text{
+    font-family: 'EB Garamond', serif;
+    margin-left: 30px;
+    line-height: 90px;
+    height: 90px;
+    overflow: hidden;
+}
+.dynamic-text li{
+    font-family: 'EB Garamond', serif;
+    color: #4C0033;
+    list-style: none;
+    font-size: 30px;
+    font-weight: 600;
+    top:0;
+    position: relative;
+}
+.dynamic-text li span{
+    position: relative;
+}
+.dynamic-text li::after {
+    content: "";
+    position: absolute;
+    height: 100% ;
+    width: 100%;
+    left:0;
+    background-color: #fff;
+    border-left: 2px solid black;
+    animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+    40%,
+    60%{
+        left: calc(100% + 30px)
+    }
+    100%{
+        left:0;
+    }
 }
 button{
     width: 140px;
@@ -57,7 +149,7 @@ button{
     padding: 12px 10px;
     outline: none;
     color: #fff;
-    background: linear-gradient(to right,black,#747272);
+    background: linear-gradient(to right,#EE6983 ,#EC7272);
     border-radius: 6px;
     cursor: pointer;
 }
@@ -85,12 +177,46 @@ button{
 .col-2 .background{
     position: absolute;
     width:80%;
-    height: 50%;
-    padding-bottom: 220px;
-    padding-left: 100px;
+    height: 45%;
+    padding-bottom: 250px;
+    padding-left: 50px;
+}
+.col-2 .girl{
+    -webkit-animation: floating-animation 6s ease-in-out infinite;
+    -o-animation: floating-animation 6s ease-in-out infinite;
+    animation: floating-animation 6s ease-in-out infinite;
+}
+.col-2 .background{
+    -webkit-animation: floating-animation 6s ease-in-out infinite;
+    -o-animation: floating-animation 6s ease-in-out infinite;
+    animation: floating-animation 6s ease-in-out infinite;
+}
+@keyframes floating-animation {
+    0%{
+        -webkit-animation: translateY(0px) ;
+        -moz-transform: translateY(0px) ;
+        -ms-transform:translateY(0px) ;
+        -o-transform:translateY(0px) ;
+        transform:translateY(0px) ;
+    }
+    50%{
+        -webkit-animation: translateY(-20px) ;
+        -moz-transform: translateY(-20px) ;
+        -ms-transform:translateY(-20px) ;
+        -o-transform:translateY(-20px) ;
+        transform:translateY(-20px) ;
+    }
+    100%{
+        -webkit-animation: translateY(0px) ;
+        -moz-transform: translateY(0px) ;
+        -ms-transform:translateY(0px) ;
+        -o-transform:translateY(0px) ;
+        transform:translateY(0px) ;
+    }
+    
 }
 /*3.About Us*/
-.profile{
+ .profile {
     width: 350px;
     height: 350px;
     border-radius: 30px 30px 30px 30px;
@@ -121,36 +247,52 @@ button{
     float: left;
     clear: right;
   }
-  
-@media  only screen and (max-width:700px) {
-    /*nav ul{
+
+  /* Responsive Website*/
+@media (max-width:850px) {
+    nav ul{
+        position: relative;
+        top:80px;
+        left: -100%;
+        height: 30vh;
         width: 100%;
-        background: linear-gradient(#fb5283,#ff3527); 
-        position: absolute;
-        top: 75px;
-        right: 0;
-        z-index: 2;
+        display: block;
+        text-align: center;
+        transition: all 0.3s ease;
+        background-color:#FFF5E4;
     }
     nav ul li{
-        display: block;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin: 10px 0;
     }
     nav ul li a{
-       color: black;
-    }*/
+        font-size: 100%;;
+        display: block;
+    }
+    .menu-btn i{
+        display: block;
+    }
+    #click:checked~ul{
+      left: 0%;  
+    }
+    #click{
+        display: none;
+    }
     .row{
         flex-direction: column-reverse;
-        margin: 50px 0;
+        align-content: center;
     }
     .col-2{
         flex-basis: 100%;
         margin-bottom: 50px;
+        align-content: center;
     }
     .col-2 .girl{
+        position: relative;
         width: 77%;
+        align-content: center;
     }
     .col-2 .background{
         width: 77%;
+        align-content: center;
     }
 }
