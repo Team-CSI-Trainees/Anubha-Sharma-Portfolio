@@ -34,19 +34,20 @@ nav ul li a:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 100px 0 ;
+    margin: 75px 0 ;
 }
 .col-1{
     flex-basis:40%;
     position: relative;
-    margin-left: 50px;
+    margin-left: 55px;
 }
 .col-1 h1{
     font-size:54px;
+    color: black;
 }
 .col-1 h3{
     font-size: 30px;
-    color:#ff3527;
+    color:black;
     font-weight: 100;
     margin:20px 0 10px;
 }
@@ -56,7 +57,7 @@ button{
     padding: 12px 10px;
     outline: none;
     color: #fff;
-    background: linear-gradient(to right,#fb5283,#ff3527);
+    background: linear-gradient(to right,black,#747272);
     border-radius: 6px;
     cursor: pointer;
 }
@@ -76,7 +77,80 @@ button{
     align-items: center;
 }
 .col-2 .girl{
+    width: 75%;
+    padding-left: 250px;
+    padding-top: 170px;
+    z-index: 1;
+}
+.col-2 .background{
+    position: absolute;
+    width:80%;
+    height: 50%;
+    padding-bottom: 220px;
+    padding-left: 100px;
+}
+/*3.About Us*/
+.profile{
+    width: 350px;
+    height: 350px;
+    border-radius: 30px 30px 30px 30px;
+}
+/*4.Skills*/
+.skill-row {
     width: 50%;
-    padding-left: 200px;
-    padding-top: 80px;
+    margin: 80px auto 80px auto;
+  }
+  .skill_1 {
+    width: 25%;
+    text-align: center;
+    float: left;
+    clear: right;
+    padding-right: 30px;
+  }
+  .data {
+    width: 25%;
+    text-align: center;
+    float: right;
+    clear: left;
+    padding-left: 30px;
+  }
+  
+  .lang {
+    width: 25%;
+    text-align: center;
+    float: left;
+    clear: right;
+  }
+  
+@media  only screen and (max-width:700px) {
+    /*nav ul{
+        width: 100%;
+        background: linear-gradient(#fb5283,#ff3527); 
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }
+    nav ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+       color: black;
+    }*/
+    .row{
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+    .col-2{
+        flex-basis: 100%;
+        margin-bottom: 50px;
+    }
+    .col-2 .girl{
+        width: 77%;
+    }
+    .col-2 .background{
+        width: 77%;
+    }
 }

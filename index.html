@@ -8,19 +8,23 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <section id="header">
-        <div class="container">
+
+<!--Header Section
+    a.Navbar
+    b.Title Page-->
+<section id="header">
+<div class="container">
         <!--1.NavBar-->
        <nav>
-        <ul>
-        <li><a href="">Home</a></li>
+        <ul id="menu_list">
+        <li><a href="#header">Home</a></li>
         <li><a href="">About</a></li>
         <li><a href="">Skills</a></li>
         <li><a href="">Contact</a></li>
     </ul>
     </nav>
       <!--2.Header-->
-   <div class="row">
+<div class="row">
     <div class="col-1">
         <h1>I am <br>Anubha Sharma</h1>
         <h3>A developer</h3>
@@ -29,29 +33,68 @@
     </div>
     <div class="col-2">
     <img src="Images/Homepage.png" alt="homepage" class="girl">
-    </div>
-   </div>
-   </div>
+    <img src="Images/background_img.png" alt="background_img" class="background">
+     </div>
+</div>
 </section>
-
-
 
 <!--3.About Us -->
 <section id="About">
+    <div class="container">
+        <h1>About Me</h1>
+        <div class="row">
+            <div class="col-1">
+                <img src="Images/profile.jpg" alt="profile" class="profile">
+            </div>
+            <div class="col-2">
+                <h3>My Name is Anubha Sharma and I am a full stack web developer.I study in Ajay Kumar Garg Engineering College</h3>
+            </div>
+        </div>
+    </div>
 
 </section>
-
-
 
 <!--4.Skills-->
 <section id="skills">
-
+<div class="container">
+    <div class="skills">
+        <h2>Skills</h2>
+        <div class="skill-row">
+          <img class="skill_1" src="Images/skill_1.png" alt="skill_1">
+          <h3>Web Development</h3>
+          <p>I have designed static websites using HTML and Cascading Style Sheets.I am new to this domain.</p>
+        </div>
+        <div class="skill-row">
+          <img class="data" src="Images/data.png" alt="data-analytics">
+          <h3>Data Science</h3>
+          <p>I have worked on Data Science projects with the help of Python.I have received a certificate in Data Analytics in Python from NPTEL</p>
+        </div>
+        <div class="skill-row">
+          <img class="lang" src="Images/language.png" alt="programming language">
+          <h3>Programming languages</h3>
+          <p>Proficient in Python, C and C++ language.
+          </p>
+        </div>
+      </div>
+</div>
 </section>
 
-
 <!--5.Contact Page-->
-<section id="contact">
-
+    <section class="contact form" id="contact form">
+        <h1>Let's Contact!</h1>
+        <lable form="name">Enter full name</lable><br/>
+        <input type="text" class="input-field" placeholder="Your Name">
+        </br>
+        </br>
+         <lable form="email">Enter Email</lable><br/>
+        <input type="email" class="input-field" placeholder="Your E-Mail">
+        </br>
+        </br>
+        <lable form="message">Message</lable><br/>
+        <textarea type="text" class="input-field textarea-field" placeholder="Your message"></textarea>
+        <br>
+        <br>
+        <button type="button" class="btn">Submit</button>
 </section>
 
 <!--6.Footer-->
