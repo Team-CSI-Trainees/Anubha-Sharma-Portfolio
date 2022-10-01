@@ -8,7 +8,6 @@
 }
  .container{
     width:100%;
-    min-height: 100vh;
     padding-left: 8%;
     padding-right: 8%;
     box-sizing: border-box;
@@ -37,8 +36,6 @@ nav{
 nav ul{
     list-style: none;
     display: flex;
-   /* float: right;
-    margin-right: 20px */;
 }
 nav ul li{
     list-style: none;
@@ -192,6 +189,8 @@ button{
     animation: floating-animation 6s ease-in-out infinite;
 }
 @keyframes floating-animation {
+    
+    
     0%{
         -webkit-animation: translateY(0px) ;
         -moz-transform: translateY(0px) ;
@@ -215,38 +214,136 @@ button{
     }
     
 }
-/*3.About Us*/
- .profile {
-    width: 350px;
-    height: 350px;
-    border-radius: 30px 30px 30px 30px;
+/*3.About Me*/
+.container-2{
+    width:100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    min-height: 50vh;
+   
 }
+.about{
+    color: #4C0033 ;
+    background-image: linear-gradient(to right,  #FFC4C4,#EE6983);
+    font-weight: 500;
+    padding: 1rem 2rem;
+    display: inline-block;
+    border-radius: 4px;
+    margin-left: -0.5rem;
+    padding-top: 30px;
+    font-size: 30px;
+}
+.col-3{
+    flex-basis:50%;
+    padding-right: 8%;
+    padding-left: 8%;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.col-4{
+    flex-basis:50%;
+    padding-right: 8%;
+    padding-left: 8%;
+    padding-top: 0;
+    padding-bottom: 0;
+
+}
+.row-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 75px 0 ;
+}
+.profile{
+    width: 300px;
+    height: 300px;
+}
+
 /*4.Skills*/
+.container-3{
+    width:100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    min-height: 50vh;
+    padding-top:-23px
+       
+}
 .skill-row {
     width: 50%;
-    margin: 80px auto 80px auto;
-  }
-  .skill_1 {
+    margin: 100px auto 100px auto;
+}
+.skill-row h1{
+    font-family: 'EB Garamond', serif;
+    color: #A10035;
+}
+.skill-row p{
+    font-family: 'Roboto Slab', serif;
+    line-height: 2;
+}
+.skill-row h3{
+    color: #4169e1;
+}
+.skill_1 {
     width: 25%;
     text-align: center;
     float: left;
     clear: right;
     padding-right: 30px;
-  }
-  .data {
+}
+.data {
     width: 25%;
     text-align: center;
     float: right;
     clear: left;
     padding-left: 30px;
-  }
-  
-  .lang {
+}
+.lang {
     width: 25%;
     text-align: center;
     float: left;
     clear: right;
-  }
+ }
+  
+  
+/*Google Maps*/
+ul {
+    list-style: none;
+}
+iframe{
+    width: 150%;
+    height: 100%;
+}
+/*Footer*/
+.container_4{
+    width:100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding-top: 8%;
+    overflow: hidden;
+ }
+ .footer{
+    background-color: #fb5283;
+}
+.row_1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 75px 0 ;
+}
+.footer-col_1{
+    flex-basis:50%;
+    position: relative;
+    margin-left: 70px;
+    margin-top: 20px;
+}
+.footer-col_2{
+    width: 25%;
+    display: flex;
+}
+.footer-col_3{
+     width: 25%;
+     display: flex;
+}
 
   /* Responsive Website*/
 @media (max-width:850px) {
