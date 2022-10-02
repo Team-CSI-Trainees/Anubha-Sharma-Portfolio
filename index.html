@@ -13,6 +13,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/cb66d7df04.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Adamina&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
 <!--Header Section
@@ -28,10 +34,10 @@
             <i class="fas fa-bars"></i>
         </label>
         <ul id="menu_list">
-        <li><a href="">Home</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Skills</a></li>
-        <li><a href="">Contact</a></li>
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
     </ul>
     </nav>
       <!--2.Header-->
@@ -56,74 +62,77 @@
 </div>
 </section>
 <!--3.About Us -->
-<section id="About">
-    <div class="container-2">
-        <div class="about">
-            <h3>About Me</h3>
-        </div>
-        <div class="row-1">
-            <div class="col-3">
-                <h3>Hi!I am Anubha</h3>
-                <p>I am a second year student purshing bachelor in technology from Ajay Kumar Garg Enginnering College</p>
-                <p>My Branch is Computer Science Engineering Data Science</p>
-                <br>
-            </div>
-            <div class="col-4">
-                <img src="Images/profile.jpg" alt="profile" class="profile">
-            </div>
-        </div>
+<section id="about">
+    <div class="section__heading">About Me</div>
+    <div class="about_container">
+       <div class="col-5">
+       <img src="Images/profile.jpg" alt="profile" class="profile">
+       </div>
+      <div class="col-6">
+        <p>I am a Second Year Student in Ajay Kumar Garg Engineering College<br>My Branch is Computer Science Engineering Data Science
+        <br> I am currently learning Web Development.</p>
+         </div>
+  </div>
+  <div class="resume">
+    <button type="button">Resume</button>
     </div>
-</section>
+    </section>
 <!--4.Skills-->
 <section id="skills">
-<div class="container-3">
-    <div class="skills">
-        <h2>My Skills</h2>
-        <div class="skill-row">
-          <img class="skill_1" src="Images/skill_1.png" alt="skill_1">
-          <h3>Web Development</h3>
-          <p>I have designed static websites using HTML and Cascading Style Sheets.I am new to this domain.</p>
+    <div class="section__heading">Skills</div>
+    <div class="skills_container">
+        <div class="col-3">
+        <img class="skill_1" src="Images/webdev.png" alt="skill_1">
+        <h3>Web Development</h3>
+        <p>I have designed static websites using HTML and Cascading Style Sheets.I am new to this domain.</p>
         </div>
-        <div class="skill-row">
-          <img class="data" src="Images/data.png" alt="data-analytics">
-          <h3>Data Science</h3>
-          <p>I have worked on Data Science projects with the help of Python.I have received a certificate in Data Analytics in Python from NPTEL</p>
-        </div>
-        <div class="skill-row">
-          <img class="lang" src="Images/language.png" alt="programming language">
-          <h3>Programming languages</h3>
-          <p>Proficient in Python, C and C++ language.
-          </p>
-        </div>
-      </div>
-</div>
+        <div class="col-3">
+            <img class="skill_1" src="Images/data.png" alt="skill_1">
+            <h3>Data Science</h3>
+        <p>I have worked on Data Science projects with the help of Python.I have received a certificate in Data Analytics in Python from NPTEL</p>
+            </div>
+            <div class="col-3">
+                <img class="skill_1" src="Images/language.png" alt="skill_1">
+                <h3>Programming languages</h3>
+        <p>Proficient in Python, C and C++ language.</p>
+                </div>
+    
+    </div>
 </section>
 <!--5.Contact Page-->
-    <section class="contact form" id="contact form">
-        <h1>Let's Contact!</h1>
-        <lable form="name">Enter full name</lable><br/>
-        <input type="text" class="input-field" placeholder="Your Name">
-        </br>
-        </br>
-         <lable form="email">Enter Email</lable><br/>
-        <input type="email" class="input-field" placeholder="Your E-Mail">
-        </br>
-        </br>
-        <lable form="message">Message</lable><br/>
-        <textarea type="text" class="input-field textarea-field" placeholder="Your message"></textarea>
-        <br>
-        <br>
-        <button type="button" class="btn">Submit</button>
+<section id="contact">
+    <h1>Let's Contact!</h1>
+    <div class="contact-box">
+        <form action="">
+            <div class="form-group">
+                <label form="name">Enter full name</label>
+                <input type="text"  name="name" id="name" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <label form="name">Email Id</label>
+                <input type="email"  name="name" id="name" placeholder="Enter Your Email Id" class="">
+            </div>
+            <div class="form-group">
+                <label form="name">Phone Number</label>
+                <input type="phone"  name="name" id="name" placeholder="Enter Your Phone Number">
+            </div>
+            <div class="form-group">
+                <label form="name">Message</label>
+                <textarea name="message" id="mesaage" cols="30" rows="10"></textarea>
+            </div>
+            <br>
+            <br>
+            <a class="btn" href="mailto:anubhaa.sharma27@gmail.com">Submit</a>
+        </form>
+    </div>
 </section>
-
-
 <!--6.Footer-->
 <footer class="footer">
-    <div class="conatiner_4">
-        <div class="row_1">
             <div class="footer-col-1">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.4670072141744!2d77.5020041!3d28.6756736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf30885b1e2a5%3A0x9983675e24c6638b!2sAKGEC%3A%20Ajay%20Kumar%20Garg%20Engineering%20College%2C%20Ghaziabad!5e0!3m2!1sen!2sin!4v1664571908811!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.4670072141744!2d77.5020041!3d28.6756736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf30885b1e2a5%3A0x9983675e24c6638b!2sAKGEC%3A%20Ajay%20Kumar%20Garg%20Engineering%20College%2C%20Ghaziabad!5e0!3m2!1sen!2sin!4v1664571908811!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
+
+            <div class="about_container">
             <div class="footer-col-2">
                 <ul>
                     <li>
@@ -131,20 +140,25 @@
                         <p>Ajay Kumar Garg Engineering College</p>
                     </li>
                     <li>
+                        <br>
                         <h4>Email Id</h4>
                         <p>anubhaa.sharma27@gmail.com</p>
                     </li>
                 </ul>
             </div>
             <div class="footer-col-3">
-                <h4>Follow Me</h4>
                 <div class="social-links">
-                    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href=""><i class="fa-brands fa-twitter"></i></a>
-                    <a href=""><i class="fa-brands fa-github"></i></a>
-                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/anubha-sharma-151343219/"><i class="fa-brands fa-linkedin-in fa-3x"></i></a>
+                    <a href="https://twitter.com/AnubhaaSharma27"><i class="fa-brands fa-twitter fa-3x"></i></a>
+                    <a href="https://github.com/AnubhaSharma2709"><i class="fa-brands fa-github fa-3x"></i></a>
+                    <a href="https://csiakgec.in/index"><i class="fa-brands fa-instagram fa-3x"></i></a>
                 </div>
             </div>
-        </div>
     </div>
-   
+    <div class="copyright">
+        <p><i class="fa-solid fa-copyright"></i> Anubha Sharma All Rights Reserved</p>
+    </div>
+    </div>
+   </footer>
+   </body>
+   </html>
